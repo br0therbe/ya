@@ -7,7 +7,7 @@ from contextlib import suppress
 from pathlib import Path
 
 yun = json.loads(Path('韵.json').read_text('utf-8'))
-poem = (Path('poems') / '202309' / '第一次遇放假的台风').read_text('utf-8').strip()
+poem = (Path('poems') / '202312' / '第二方案').read_text('utf-8').strip()
 if '}' == poem[-1]:
     poem, con = poem.rsplit('\n', 1)
     poem = poem.strip()
